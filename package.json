@@ -1,10 +1,12 @@
 {
   "devDependencies": {
+    "auto-changelog": "^2.2.1",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0"
   },
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "changelog": "auto-changelog -p && git add CHANGELOG.md"
   },
   "config": {
     "commitizen": {
